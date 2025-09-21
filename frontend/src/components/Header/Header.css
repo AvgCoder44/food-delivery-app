@@ -1,0 +1,76 @@
+.header{
+    height: 34vw;
+    margin: 30px auto;
+    background: url('/header_img.png') no-repeat center;
+    background-size: contain;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 20px;
+}
+.header-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 1.5s ease-in-out;
+}
+.header-content h2{
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw, 60px);
+    line-height: 1.2;
+    word-wrap: break-word;
+    margin: 0;
+}    
+.header-content p{
+    color: white;
+    font-size: 1vw;
+    font-weight: 500;
+}
+.header-content button{
+    border: none;
+    color: rgb(18, 7, 7);
+    font-weight: 500;
+    padding: 1vw 1.5vw;
+    border-radius: 50px;
+    background-color: white;
+    font-size: max(1vw, 13px);
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.header-content button:hover{
+    background-color: #787070;
+}
+@media (max-width: 1050px) {
+    .header-content h2 {
+        font-size: max(3vw, 40px);
+    }
+    .header-content {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 750px) {
+    .header-content{
+        max-width: 65%;
+    }
+    .header-content h2 {
+        font-size: max(5vw, 32px);
+    }
+    .header-content p{
+        display: none;
+    }
+    .header-content button{
+        padding: 2vw 4vw;
+    }
+}
