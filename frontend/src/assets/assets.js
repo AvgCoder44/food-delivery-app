@@ -1,71 +1,135 @@
-const IMAGES_PATH = '/src/assets/';
+// Import all assets using Vite's import.meta.url for proper asset handling
+import logo from './logo.png';
+import basket_icon from './basket_icon.png';
+import header_img from './header_img.png';
+import search_icon from './search_icon.png';
+import rating_starts from './rating_starts.png';
+import add_icon_green from './add_icon_green.png';
+import add_icon_white from './add_icon_white.png';
+import remove_icon_red from './remove_icon_red.png';
+import app_store from './app_store.png';
+import play_store from './play_store.png';
+import linkedin_icon from './linkedin_icon.png';
+import facebook_icon from './facebook_icon.png';
+import twitter_icon from './twitter_icon.png';
+import cross_icon from './cross_icon.png';
+import selector_icon from './selector_icon.png';
+import profile_icon from './profile_icon.png';
+import logout_icon from './logout_icon.png';
+import bag_icon from './bag_icon.png';
+import parcel_icon from './parcel_icon.png';
 
 export const assets = {
-    logo: IMAGES_PATH + 'logo.png',
-    basket_icon: IMAGES_PATH + 'basket_icon.png',
-    header_img: IMAGES_PATH + 'header_img.png',
-    search_icon: IMAGES_PATH + 'search_icon.png',
-    rating_starts: IMAGES_PATH + 'rating_starts.png',
-    add_icon_green: IMAGES_PATH + 'add_icon_green.png',
-    add_icon_white: IMAGES_PATH + 'add_icon_white.png',
-    remove_icon_red: IMAGES_PATH + 'remove_icon_red.png',
-    app_store: IMAGES_PATH + 'app_store.png',
-    play_store: IMAGES_PATH + 'play_store.png',
-    linkedin_icon: IMAGES_PATH + 'linkedin_icon.png',
-    facebook_icon: IMAGES_PATH + 'facebook_icon.png',
-    twitter_icon: IMAGES_PATH + 'twitter_icon.png',
-    cross_icon: IMAGES_PATH + 'cross_icon.png',
-    selector_icon: IMAGES_PATH + 'selector_icon.png',
-    profile_icon: IMAGES_PATH + 'profile_icon.png',
-    logout_icon: IMAGES_PATH + 'logout_icon.png',
-    bag_icon: IMAGES_PATH + 'bag_icon.png',
-    parcel_icon: IMAGES_PATH + 'parcel_icon.png'
+    logo,
+    basket_icon,
+    header_img,
+    search_icon,
+    rating_starts,
+    add_icon_green,
+    add_icon_white,
+    remove_icon_red,
+    app_store,
+    play_store,
+    linkedin_icon,
+    facebook_icon,
+    twitter_icon,
+    cross_icon,
+    selector_icon,
+    profile_icon,
+    logout_icon,
+    bag_icon,
+    parcel_icon
 }
+
+// Import menu images
+import menu_1 from './menu_1.png';
+import menu_2 from './menu_2.png';
+import menu_3 from './menu_3.png';
+import menu_4 from './menu_4.png';
+import menu_5 from './menu_5.png';
+import menu_6 from './menu_6.png';
+import menu_7 from './menu_7.png';
+import menu_8 from './menu_8.png';
+import menu_9 from './menu_9.png';
 
 export const menu_list = [
     {
         menu_name: "Salad",
-        menu_image: IMAGES_PATH + 'menu_1.png'
+        menu_image: menu_1
     },
     {
         menu_name: "Rolls",
-        menu_image: IMAGES_PATH + 'menu_2.png'
+        menu_image: menu_2
     },
     {
         menu_name: "Deserts",
-        menu_image: IMAGES_PATH + 'menu_3.png'
+        menu_image: menu_3
     },
     {
         menu_name: "Sandwich",
-        menu_image: IMAGES_PATH + 'menu_4.png'
+        menu_image: menu_4
     },
     {
         menu_name: "Cake",
-        menu_image: IMAGES_PATH + 'menu_5.png'
+        menu_image: menu_5
     },
     {
         menu_name: "Pure Veg",
-        menu_image: IMAGES_PATH + 'menu_6.png'
+        menu_image: menu_6
     },
     {
         menu_name: "Pasta",
-        menu_image: IMAGES_PATH + 'menu_7.png'
+        menu_image: menu_7
     },
     {
         menu_name: "Noodles",
-        menu_image: IMAGES_PATH + 'menu_8.png'
+        menu_image: menu_8
     },
     {
         menu_name: "Burgers",
-        menu_image: IMAGES_PATH + 'menu_9.png'
+        menu_image: menu_9
     }
 ]
+
+// Import food images
+import food_1 from './food_1.png';
+import food_2 from './food_2.png';
+import food_3 from './food_3.png';
+import food_4 from './food_4.png';
+import food_5 from './food_5.png';
+import food_6 from './food_6.png';
+import food_7 from './food_7.png';
+import food_8 from './food_8.png';
+import food_9 from './food_9.png';
+import food_10 from './food_10.png';
+import food_11 from './food_11.png';
+import food_12 from './food_12.png';
+import food_13 from './food_13.png';
+import food_14 from './food_14.png';
+import food_15 from './food_15.png';
+import food_16 from './food_16.png';
+import food_17 from './food_17.png';
+import food_18 from './food_18.png';
+import food_19 from './food_19.png';
+import food_20 from './food_20.png';
+import food_21 from './food_21.png';
+import food_22 from './food_22.png';
+import food_23 from './food_23.png';
+import food_24 from './food_24.png';
+import food_25 from './food_25.png';
+import food_26 from './food_26.png';
+import food_27 from './food_27.png';
+import food_28 from './food_28.png';
+import food_29 from './food_29.png';
+import food_30 from './food_30.png';
+import food_31 from './food_31.png';
+import food_32 from './food_32.png';
 
 export const food_list = [
     {
         _id: "1",
         name: "Greek salad",
-        image: IMAGES_PATH + 'food_1.png',
+        image: food_1,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Salad"
@@ -73,7 +137,7 @@ export const food_list = [
     {
         _id: "2",
         name: "Veg salad",
-        image: IMAGES_PATH + 'food_2.png',
+        image: food_2,
         price: 18,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Salad"
@@ -81,7 +145,7 @@ export const food_list = [
     {
         _id: "3",
         name: "Clover Salad",
-        image: IMAGES_PATH + 'food_3.png',
+        image: food_3,
         price: 16,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Salad"
@@ -89,7 +153,7 @@ export const food_list = [
     {
         _id: "4",
         name: "Chicken Salad",
-        image: IMAGES_PATH + 'food_4.png',
+        image: food_4,
         price: 24,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Salad"
@@ -97,7 +161,7 @@ export const food_list = [
     {
         _id: "5",
         name: "Lasagna Rolls",
-        image: IMAGES_PATH + 'food_5.png',
+        image: food_5,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Rolls"
@@ -105,7 +169,7 @@ export const food_list = [
     {
         _id: "6",
         name: "Peri Peri Rolls",
-        image: IMAGES_PATH + 'food_6.png',
+        image: food_6,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Rolls"
@@ -113,7 +177,7 @@ export const food_list = [
     {
         _id: "7",
         name: "Chicken Rolls",
-        image: IMAGES_PATH + 'food_7.png',
+        image: food_7,
         price: 20,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Rolls"
@@ -121,7 +185,7 @@ export const food_list = [
     {
         _id: "8",
         name: "Veg Rolls",
-        image: IMAGES_PATH + 'food_8.png',
+        image: food_8,
         price: 15,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Rolls"
@@ -129,7 +193,7 @@ export const food_list = [
     {
         _id: "9",
         name: "Ripple Ice Cream",
-        image: IMAGES_PATH + 'food_9.png',
+        image: food_9,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Deserts"
@@ -137,7 +201,7 @@ export const food_list = [
     {
         _id: "10",
         name: "Fruit Ice Cream",
-        image: IMAGES_PATH + 'food_10.png',
+        image: food_10,
         price: 22,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Deserts"
@@ -145,7 +209,7 @@ export const food_list = [
     {
         _id: "11",
         name: "Jar Ice Cream",
-        image: IMAGES_PATH + 'food_11.png',
+        image: food_11,
         price: 10,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Deserts"
@@ -153,7 +217,7 @@ export const food_list = [
     {
         _id: "12",
         name: "Vanilla Ice Cream",
-        image: IMAGES_PATH + 'food_12.png',
+        image: food_12,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Deserts"
@@ -161,7 +225,7 @@ export const food_list = [
     {
         _id: "13",
         name: "Chicken Sandwich",
-        image: IMAGES_PATH + 'food_13.png',
+        image: food_13,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Sandwich"
@@ -169,7 +233,7 @@ export const food_list = [
     {
         _id: "14",
         name: "Vegan Sandwich",
-        image: IMAGES_PATH + 'food_14.png',
+        image: food_14,
         price: 18,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Sandwich"
@@ -177,7 +241,7 @@ export const food_list = [
     {
         _id: "15",
         name: "Grilled Sandwich",
-        image: IMAGES_PATH + 'food_15.png',
+        image: food_15,
         price: 16,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Sandwich"
@@ -185,7 +249,7 @@ export const food_list = [
     {
         _id: "16",
         name: "Bread Sandwich",
-        image: IMAGES_PATH + 'food_16.png',
+        image: food_16,
         price: 24,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Sandwich"
@@ -193,7 +257,7 @@ export const food_list = [
     {
         _id: "17",
         name: "Cup Cake",
-        image: IMAGES_PATH + 'food_17.png',
+        image: food_17,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Cake"
@@ -201,7 +265,7 @@ export const food_list = [
     {
         _id: "18",
         name: "Vegan Cake",
-        image: IMAGES_PATH + 'food_18.png',
+        image: food_18,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Cake"
@@ -209,7 +273,7 @@ export const food_list = [
     {
         _id: "19",
         name: "Butterscotch Cake",
-        image: IMAGES_PATH + 'food_19.png',
+        image: food_19,
         price: 20,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Cake"
@@ -217,7 +281,7 @@ export const food_list = [
     {
         _id: "20",
         name: "Sliced Cake",
-        image: IMAGES_PATH + 'food_20.png',
+        image: food_20,
         price: 15,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Cake"
@@ -225,7 +289,7 @@ export const food_list = [
     {
         _id: "21",
         name: "Garlic Mushroom",
-        image: IMAGES_PATH + 'food_21.png',
+        image: food_21,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Pure Veg"
@@ -233,7 +297,7 @@ export const food_list = [
     {
         _id: "22",
         name: "Fried Cauliflower",
-        image: IMAGES_PATH + 'food_22.png',
+        image: food_22,
         price: 22,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Pure Veg"
@@ -241,7 +305,7 @@ export const food_list = [
     {
         _id: "23",
         name: "Mix Veg Pulao",
-        image: IMAGES_PATH + 'food_23.png',
+        image: food_23,
         price: 10,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Pure Veg"
@@ -249,7 +313,7 @@ export const food_list = [
     {
         _id: "24",
         name: "Rice Zucchini",
-        image: IMAGES_PATH + 'food_24.png',
+        image: food_24,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Pure Veg"
@@ -257,7 +321,7 @@ export const food_list = [
     {
         _id: "25",
         name: "Cheese Pasta",
-        image: IMAGES_PATH + 'food_25.png',
+        image: food_25,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Pasta"
@@ -265,7 +329,7 @@ export const food_list = [
     {
         _id: "26",
         name: "Tomato Pasta",
-        image: IMAGES_PATH + 'food_26.png',
+        image: food_26,
         price: 18,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Pasta"
@@ -273,7 +337,7 @@ export const food_list = [
     {
         _id: "27",
         name: "Creamy Pasta",
-        image: IMAGES_PATH + 'food_27.png',
+        image: food_27,
         price: 16,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Pasta"
@@ -281,7 +345,7 @@ export const food_list = [
     {
         _id: "28",
         name: "Chicken Pasta",
-        image: IMAGES_PATH + 'food_28.png',
+        image: food_28,
         price: 24,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Pasta"
@@ -289,7 +353,7 @@ export const food_list = [
     {
         _id: "29",
         name: "Butter Noodles",
-        image: IMAGES_PATH + 'food_29.png',
+        image: food_29,
         price: 14,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Noodles"
@@ -297,7 +361,7 @@ export const food_list = [
     {
         _id: "30",
         name: "Veg Noodles",
-        image: IMAGES_PATH + 'food_30.png',
+        image: food_30,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Noodles"
@@ -305,7 +369,7 @@ export const food_list = [
     {
         _id: "31",
         name: "Somen Noodles",
-        image: IMAGES_PATH + 'food_31.png',
+        image: food_31,
         price: 20,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Noodles"
@@ -313,7 +377,7 @@ export const food_list = [
     {
         _id: "32",
         name: "Cooked Noodles",
-        image: IMAGES_PATH + 'food_32.png',
+        image: food_32,
         price: 15,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Noodles"
