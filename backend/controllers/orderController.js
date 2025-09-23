@@ -2,7 +2,7 @@ import orderModel from "../models/orderModel.js";
 import userModel from "../models/UserModel.js";
 import Razorpay from "razorpay";
 
-const frontend_url = "http://localhost:5174";
+const frontend_url = "https://food-delivery-frontend-1-jh5e.onrender.com";
 
 const razorpay = new Razorpay({
     key_id: process.env.RAZORPAY_KEY_ID,
